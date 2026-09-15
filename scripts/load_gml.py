@@ -193,7 +193,7 @@ def load_addresses(db, path, total=1679882):
         if pos_node is not None and pos_node.text:
             parts = pos_node.text.strip().split()
             if len(parts) == 2:
-                x, y = float(parts[0]), float(parts[1])
+                y, x = float(parts[0]), float(parts[1])
 
         components = elem.findall("ad:component", NS)
         thoroughfare_ref = None
